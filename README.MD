@@ -16,15 +16,18 @@ from time import sleep
 led = rgbled()
 led.setup()
 
-led.blink('white', 0.2)
+led.blink('white', 0.2) #this won't stop until....
+
+for i in range(10):
+  print('running other code....')
+  sleep(1)
+
+led.blink('off', 0) #here by turning off the led.
+led.blink('red', 0.2) #or here starting another thread to blink.
 sleep(3)
-led.blink('off', 0)
-sleep(3)
-led.blink('red', 0.2)
-sleep(3)
-led.write('magenta')
+led.write('magenta') #this is not threaded
 sleep(3)
 
-led.blink('off', 0)
+led.blink('off', 0) #the blink red wouldn't stop until here
 led.write('off')
 ```
