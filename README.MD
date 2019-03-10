@@ -1,6 +1,6 @@
-Having issues with wiringpi ports for Python? You may use this library to get the GPIO functioning and blinking an LED. If you can run gpio readall from CLI, then this will work. 
+# H1 Having issues with wiringpi ports for Python? You may use this library to get the GPIO functioning and blinking an LED. If you can run gpio readall from CLI, then this will work. 
 
-Currently, the script features solid and blinking LED states. All the colors supported by an RGB LED. The blink function is threaded and doesn't interrupt the code flow.
+# H4 Currently, the script features solid and blinking LED states. All the colors supported by an RGB LED. The blink function is threaded and doesn't interrupt the code flow.
 
 Adjust self.pins = [225,229,231] in rgbled.py to you desired BCM pins for the LED.
 
