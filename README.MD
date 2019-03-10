@@ -27,7 +27,7 @@ led.blink('red', 0.2) #or here starting another thread to blink.
 sleep(3)
 led.write('magenta') #this is not threaded
 sleep(3)
+led.write('off')
 
 led.blink('off', 0) #the blink red wouldn't stop until here
-led.write('off')
 ```
